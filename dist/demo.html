@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fixed Navbar Example</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    position: relative;
+    transition: top 0.3s;
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Add styling for sections/content as needed */
+section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Example section styling */
+#section1 {
+    background-color: #f2f2f2;
+}
+
+#section2 {
+    background-color: #ddd;
+}
+
+#section3 {
+    background-color: #ccc;
+}
+
+</style>
+<body>
+    <header>
+        <nav id="navbar" class="fixed">
+            <div class="container">
+                <h1>My Website</h1>
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <!-- Content for Section 1 -->
+    </section>
+
+    <section id="section2">
+        <!-- Content for Section 2 -->
+    </section>
+
+    <section id="section3">
+        <!-- Content for Section 3 -->
+    </section>
+
+    <!-- More sections/content here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
